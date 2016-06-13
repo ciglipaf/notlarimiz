@@ -68,20 +68,13 @@
 
 `git log --pretty=format:'%h %ad | %s [%an]' --graph --date=short`
 - uu biraz detaylı, şimdi pretty yapıyorduk zaten, daha güzel gösteriyor terminal çıktısını. Bunu bir de formatlıyoruz:
-    - **%h**
-		    - commitimizin hash'inin kısaltılmışı
-    - **%ad**
-		    - author date, commit ettiğimiz tarih
-	  - |
-		    - ekranda yazıları ayırdık, sadece şekil amaçlı
-    - **%s**
-		    - yazdığımız yorumlar
-    - **%an**
-		    - yazar adı, köşeli parantez içinde gösteriliyor bu şekilde girdiğmiiz için parametreyi
-    - **--graph**
-		    - commitleri ASCII formatında ağaç şeklinde gösterir
-	  - **--date=short**
-		    - tarihi gösterir, kısa formda.
+    - **%h** commitimizin hash'inin kısaltılmışı
+    - **%ad** author date, commit ettiğimiz tarih
+    - | ekranda yazıları ayırdık, sadece şekil amaçlı
+    - **%s** yazdığımız yorumlar
+    - **%an** yazar adı, köşeli parantez içinde gösteriliyor bu şekilde girdiğmiiz için parametreyi
+    - **--graph** commitleri ASCII formatında ağaç şeklinde gösterir
+	  - **--date=short** tarihi gösterir, kısa formda.
 
 `git add submodule git@github.com:ciglipaf/basliyoruz/wiki.git`
 - bu sayede, **basliyoruz** repository'imizin bağımsız oluşturduğumuz **wiki** repository'sini **submodule** olarak eklemiş olduk. basliyoruz'un dosyalar kısmına, bu wiki sayfasına yönlendiren bir link ve modulumuzun github tarafından takibini sağlayacak olan **.gitmodules** dosyası oluşmuş oldu.
